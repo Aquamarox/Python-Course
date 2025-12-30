@@ -1,6 +1,6 @@
 from typing import List
-from models.comment import Comment
+from models.product import Product
 
 
-def get_ordered_comments_by_likes(comments: List[Comment]) -> List[Comment]:
-    return sorted(comments, key=lambda x: x.like_count, reverse=True)
+def get_ordered_products_by_price(products: List[Product]) -> List[Product]:
+    return sorted(products, key=lambda x: x.get_price(), reverse=True)
