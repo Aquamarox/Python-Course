@@ -18,8 +18,7 @@ class Comment:
         self.like_count += 1
 
     def dislike(self) -> None:
-        if self.like_count > 0:
-            self.like_count -= 1
+        self.like_count -= 1
 
     def __repr__(self) -> str:
         short_text = self.text[:20] + "..." if len(self.text) > 20 else self.text
