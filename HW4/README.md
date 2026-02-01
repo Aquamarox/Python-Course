@@ -1,4 +1,4 @@
-Flask-домашка: веб-приложение с endpoint'ами.
+#Flask-домашка
 
 ## Функционал:
 - GET / - информация о сервере
@@ -10,4 +10,9 @@ Flask-домашка: веб-приложение с endpoint'ами.
 make venv
 make install_requirements
 make run
+```
+
+## Тесты:
+```bash
+make test
 ```
